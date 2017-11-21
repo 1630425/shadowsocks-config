@@ -5,6 +5,15 @@
     "server":"0.0.0.0",
     "server_port":8989,
     "local_port":1080,
+    "password":"teddysun.com",
+    "method":"aes-256-cfb",
+    "timeout":600
+}
+修改
+{
+    "server":"0.0.0.0",
+    "server_port":8989,
+    "local_port":1080,
     "password":"chengtong",
     "method":"aes-256-cfb",
     "timeout":600
