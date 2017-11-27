@@ -1,0 +1,4 @@
+#!/bin/sh
+begin_line=$(sed -n '/Your Server IP/=' /shadowsocks.log)
+end_line=$(sed -n '/Your Encryption Method/=' /shadowsocks.log)
+sed -n ''$begin_line','$end_line'p' /shadowsocks.log >>/shadowsocks-go.log
