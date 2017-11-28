@@ -7,5 +7,5 @@ i=$(sed -n '/"password":/=' /etc/shadowsocks/config.json)
 string=sed -n ''$i'p' /etc/shadowsocks/config.json
 b=$(expr index $string ':"')
 #e=$(expr index $string '",')
-passw=echo ${string:$string:8}
+passw=echo ${string:$b:8}
 sed -i 's/teddysun.com/'$passw'/' /shadowsocks-go.log
