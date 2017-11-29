@@ -1,7 +1,6 @@
 #!/bin/sh
 begin_line=$(sed -n '/Your Server IP/=' /shadowsocks-go.log)
 end_line=$(sed -n '/Your Encryption Method/=' /shadowsocks-go.log)
-touch shadowsocks.log
 sed -n ''$begin_line','$end_line'p' /shadowsocks-go.log >>/shadowsocks.log
 
 i=$(sed -n '/"password":/=' /etc/shadowsocks/config.json)
