@@ -2,6 +2,7 @@
 	"port_password": {
          "8989":"admin2018",
          "9001":"irisAdmin",
+         "9002":"irisWifiAdmin",
 	 "9010":"PassworD",
 	 "9011":"PassworD",
 	 "9012":"PassworD",
